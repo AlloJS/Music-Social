@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(237, 236, 236);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #434141;
+}
+h2 {
+    font-size:x-large;
+    font-weight: bolder;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    background-color: rgb(247, 60, 88);
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.nav-bar > li > a {
+    color: #FFF;
+    font-size: large;
+    font-weight: 900;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(247, 60, 88);
+}
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:8px;
+    height: 300px;
+    width: 400px;
+    background-color: #FFF;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(93, 93, 93);
+    border-radius: 10px;
+}
+.container-due {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 15px 8px 15px 8px;
+    background-color: #FFF;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(93, 93, 93);
+    border-radius: 10px;
+    gap:10px;
+}
+.form-enter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.submit {
+    background-color: rgb(247, 60, 88);
+    color: #FFF;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+}
+.new-account {
+    background-color: rgb(60, 141, 247);
+    color: #FFF;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin:5px;
+}
+.input-register {
+    border-radius: 10px;
+    padding:8px;
+    border: gray solid 1px;
+    margin-top :5px;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.hr {
+    background-color: rgb(128, 128, 128);
+    width: 300px;
+    height: 2px;
+    margin: 3px;
+}
+
+.footer {
+    margin-top: 200px;
+    text-align: center;
+    background-color: #FFF;
+    padding:30px;
+    height: 400px;
+}   
+.error {
+    border: solid 1px red;
+}
+.flex {
+    background-color: rgb(60, 69, 247);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex > li > a {
+    color: white;
+}
+.main {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .all {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-top: 90px;
+        gap: 40px;
+    }
+    .main {
+        margin: 20px;
+        background-color: rgb(199, 197, 197);
+        display: grid;
+        grid-template-columns: 10% 50% 30% 10%;
+        padding: 10px;
+        text-align: center;
+        height: 400px;
+    }
+    .white {
+        background-color: white;
+        margin:0px 10px;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .list > li {
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        align-items: center;
+    }
+  }
